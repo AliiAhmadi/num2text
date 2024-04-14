@@ -18,20 +18,29 @@ func TestGroupFunction(t *testing.T) {
 		res  []string
 	}{
 		{
-			name: "",
+			name: "group 1",
 			inp:  "123456",
 			res:  []string{"123", "456"},
 		},
 		{
-			name: "",
+			name: "group 2",
 			inp:  "321",
 			res:  []string{"321"},
 		},
-		// TODO - Error
 		{
-			name: "",
+			name: "group 3",
 			inp:  "-23.456",
 			res:  []string{"-23", ".45", "6"},
+		},
+		{
+			name: "group 4",
+			inp:  "1234",
+			res:  []string{"123", "4"},
+		},
+		{
+			name: "group 5",
+			inp:  "000111---...",
+			res:  []string{"000", "111", "---", "..."},
 		},
 	}
 
