@@ -24,7 +24,7 @@ func number_validator(num string) (bool, error) {
 	// number can not be just a '-', '.' or ''
 	iv := []string{"-", ".", ""}
 	if existInArray(num, iv) {
-		return false, fmt.Errorf("number can not be %s or %s or %s", iv[0], iv[1], iv[2])
+		return false, fmt.Errorf("number can not be %+v", iv)
 	}
 
 	// check all characters of input number to be in valid chars
@@ -33,6 +33,15 @@ func number_validator(num string) (bool, error) {
 		if !existInArray(v, validchs) {
 			return false, fmt.Errorf("%s contain invalid characters", num)
 		}
+	}
+
+	// number can not have more that one '-' or '.'
+	if strings.Count(num, "-") > 1 || strings.Count(num, ".") > 1 {
+		return false, fmt.Errorf("number can not have more that one '-' or '.'")
+	}
+
+	if strings.Count(num, "-") == 1 && strings.Index(num, "-") != 0 {
+		return false, fmt.Errorf("'-' character should be in 0 index")
 	}
 
 	return true, nil

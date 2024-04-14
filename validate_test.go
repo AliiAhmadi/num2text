@@ -10,6 +10,7 @@ import (
 	"testing"
 )
 
+// TestExistInArray
 func TestExistInArray(t *testing.T) {
 	tests := []struct {
 		name     string
@@ -54,6 +55,54 @@ func TestExistInArray(t *testing.T) {
 			ok := existInArray(test.value, test.values)
 			if ok != test.expected {
 				t.Errorf("existInArray(%v, %v) = %v - expected %v", test.value, test.values, ok, test.expected)
+			}
+		})
+	}
+}
+
+// TestNumberValidator
+func TestNumberValidator(t *testing.T) {
+	tests := []struct {
+		name     string
+		num      string
+		expected bool
+		err      string
+	}{
+		{
+			name:     "valid number - negetive zero",
+			num:      "-0",
+			expected: true,
+			err:      "",
+		},
+		{
+			name:     "invalid character - without any integer",
+			num:      "-",
+			expected: false,
+			err:      `number can not be [- . ]`,
+		},
+		{
+			name:     "",
+			num:      "-0.9",
+			expected: true,
+			err:      ``,
+		},
+		{
+			name:     "contain more that one -",
+			num:      "-123-456",
+			expected: false,
+			err:      `number can not have more that one '-' or '.'`,
+		},
+	}
+
+	for _, test := range tests {
+		t.Run(test.name, func(t *testing.T) {
+			isv, err := number_validator(test.num)
+			if err != nil {
+				if err.Error() != test.err {
+					t.Errorf("number_validator error: %v", err)
+				}
+			} else if test.expected != isv {
+				t.Errorf("number_validator(%v) = %v - expected %v", test.num, isv, test.expected)
 			}
 		})
 	}
