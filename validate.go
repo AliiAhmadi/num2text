@@ -5,12 +5,25 @@
 
 package num2text
 
-type number interface {
-	~uint8 | ~uint16 | ~uint32 | ~uint64
-	~int8 | ~int16 | ~int32 | ~int64
-	~int | ~uint | ~float32 | ~float64
+import (
+	"fmt"
+)
+
+func existInArray[T comparable](value T, values []T) bool {
+	for _, v := range values {
+		if v == value {
+			return true
+		}
+	}
+
+	return false
 }
 
-func number_validator[T number](num T) string {
-	return ""
+func number_validator(num string) (bool, error) {
+	iv := []string{"-", ".", ""}
+	if existInArray(num, iv) {
+		return false, fmt.Errorf("number can not be %s or %s or %s", iv[0], iv[1], iv[2])
+	}
+
+	return true, nil
 }
