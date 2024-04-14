@@ -92,6 +92,18 @@ func TestNumberValidator(t *testing.T) {
 			expected: false,
 			err:      `number can not have more that one '-' or '.'`,
 		},
+		{
+			name:     "contain more .",
+			num:      "-.33.3",
+			expected: false,
+			err:      `number can not have more that one '-' or '.'`,
+		},
+		{
+			name:     "more . and -",
+			num:      "-0988.2.-12",
+			expected: false,
+			err:      `number can not have more that one '-' or '.'`,
+		},
 	}
 
 	for _, test := range tests {
