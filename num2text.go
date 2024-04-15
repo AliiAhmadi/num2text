@@ -153,6 +153,8 @@ func Convert(num string) (string, error) {
 			groupt := ""
 			dcount--
 
+			jump := (gr == "0")
+
 			if tmp, _ := strconv.Atoi(gr); tmp >= 100 {
 				hdigits := cleanNum(strings.Split(strconv.Itoa(tmp/100), ".")[0], false)
 				ff, _ := strconv.Atoi(hdigits)
@@ -175,6 +177,15 @@ func Convert(num string) (string, error) {
 
 			if tmp, _ := strconv.Atoi(gr); tmp >= 1 && tmp <= 19 {
 				groupt += coll.ones[tmp]
+			}
+
+			res += groupt
+
+			if !jump {
+				res += " " + coll.thousands[gcount]
+				if gcount != 0 {
+					res += coll.v
+				}
 			}
 		}
 
