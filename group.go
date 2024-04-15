@@ -6,6 +6,7 @@
 package num2text
 
 import (
+	"slices"
 	"strings"
 )
 
@@ -16,21 +17,23 @@ func group(num string) []string {
 
 	str := ""
 	c := 0
-	for _, ch := range chs {
+
+	for i := len(chs) - 1; i >= 0; i-- {
 		if c == 3 {
 			c = 1
-			g = append(g, str)
+			g = append(g, reverse(str))
 			str = ""
-			str += ch
+			str += chs[i]
 		} else {
 			c++
-			str += ch
+			str += chs[i]
 		}
 	}
 
 	if str != "" {
-		g = append(g, str)
+		g = append(g, reverse(str))
 	}
+	slices.Reverse(g)
 
 	return g
 }

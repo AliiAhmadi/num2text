@@ -30,12 +30,12 @@ func TestGroupFunction(t *testing.T) {
 		{
 			name: "group 3",
 			inp:  "-23.456",
-			res:  []string{"-23", ".45", "6"},
+			res:  []string{"-", "23.", "456"},
 		},
 		{
 			name: "group 4",
 			inp:  "1234",
-			res:  []string{"123", "4"},
+			res:  []string{"1", "234"},
 		},
 		{
 			name: "group 5",
@@ -45,7 +45,7 @@ func TestGroupFunction(t *testing.T) {
 		{
 			name: "group 6",
 			inp:  "0234567895",
-			res:  []string{"023", "456", "789", "5"},
+			res:  []string{"0", "234", "567", "895"},
 		},
 	}
 

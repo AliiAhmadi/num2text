@@ -156,6 +156,12 @@ func TestNum2TextFunction(t *testing.T) {
 			inp:  "100",
 			out:  "صد",
 		},
+		// TODO - Bug
+		// {
+		// 	name: "",
+		// 	inp:  "4713986205",
+		// 	out:  "چهار میلیارد و هفتصد و سیزده میلیون و نهصد و هشتاد و شش هزار و دویست و پنج",
+		// },
 	}
 
 	for i, test := range tests {
