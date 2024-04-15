@@ -11,6 +11,8 @@ type collection struct {
 	hundreds  map[int]string
 	thousands map[int]string
 	n         string
+	v         string
+	m         string
 }
 
 var coll = collection{
@@ -75,4 +77,6 @@ var coll = collection{
 		11: "دسیلیون",
 	},
 	n: "منفی ",
+	v: " و ",
+	m: "م",
 }
