@@ -82,5 +82,19 @@ func Convert(num string) (string, error) {
 		res += coll.n
 	}
 
+	ig := group(ing)
+	gcount := len(ig)
+
+	for i, v := range ig {
+		v = cleanNum(v, false)
+		groupt := ""
+		gcount--
+
+		jump := (v == "0")
+		if tmp, _ := strconv.Atoi(v); tmp >= 100 {
+			// hdigit := cleanNum()
+		}
+	}
+
 	return "", nil
 }
