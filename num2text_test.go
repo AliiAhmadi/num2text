@@ -68,11 +68,6 @@ func TestNum2TextFunction(t *testing.T) {
 		},
 		{
 			name: "two digit",
-			inp:  "10",
-			out:  "ده",
-		},
-		{
-			name: "two digit",
 			inp:  "11",
 			out:  "یازده",
 		},
@@ -115,6 +110,916 @@ func TestNum2TextFunction(t *testing.T) {
 			name: "two digit",
 			inp:  "19",
 			out:  "نوزده",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "21",
+			out:  "بیست و یک",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
+		},
+		{
+			name: "two digit",
+			inp:  "20",
+			out:  "بیست",
 		},
 	}
 
