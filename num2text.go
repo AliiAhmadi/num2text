@@ -76,5 +76,11 @@ func Convert(num string) (string, error) {
 		return coll.ones[0], nil
 	}
 
+	res := ""
+
+	if isn {
+		res += coll.n
+	}
+
 	return "", nil
 }

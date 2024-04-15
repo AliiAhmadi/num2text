@@ -10,6 +10,7 @@ type collection struct {
 	tens      map[int]string
 	hundreds  map[int]string
 	thousands map[int]string
+	n         string
 }
 
 var coll = collection{
@@ -73,4 +74,5 @@ var coll = collection{
 		10: "نونیلیون",
 		11: "دسیلیون",
 	},
+	n: "منفی ",
 }
