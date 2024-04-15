@@ -48,6 +48,12 @@ func TestExistInArray(t *testing.T) {
 			values:   []interface{}{byte('w'), byte('w'), byte('w'), byte('8'), byte('w'), byte('5'), byte('-'), byte('1'), byte('r'), byte('q')},
 			expected: true,
 		},
+		{
+			name:     "string slice - not exist",
+			value:    "hello",
+			values:   []interface{}{"a", "b", "c", "d"},
+			expected: false,
+		},
 	}
 
 	for i, test := range tests {
@@ -108,7 +114,7 @@ func TestNumberValidator(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run(test.name, func(t *testing.T) {
-			isv, err := number_validator(test.num)
+			isv, err := numberValidator(test.num)
 			if err != nil {
 				if err.Error() != test.err {
 					t.Errorf("number_validator error: %v", err)

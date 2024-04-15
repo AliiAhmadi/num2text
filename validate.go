@@ -20,7 +20,7 @@ func existInArray[T comparable](value T, values []T) bool {
 	return false
 }
 
-func number_validator(num string) (bool, error) {
+func numberValidator(num string) (bool, error) {
 	// number can not be just a '-', '.' or ''
 	iv := []string{"-", ".", ""}
 	if existInArray(num, iv) {
