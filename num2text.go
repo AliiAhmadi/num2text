@@ -12,7 +12,6 @@ import (
 )
 
 func Convert(num string) (string, error) {
-	// strip whitespaces
 	num = strings.TrimSpace(num)
 
 	var err error
