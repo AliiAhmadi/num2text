@@ -62,9 +62,59 @@ func TestNum2TextFunction(t *testing.T) {
 			out:  "نه",
 		},
 		{
-			name: "one digit",
+			name: "two digit",
 			inp:  "10",
 			out:  "ده",
+		},
+		{
+			name: "two digit",
+			inp:  "10",
+			out:  "ده",
+		},
+		{
+			name: "two digit",
+			inp:  "11",
+			out:  "یازده",
+		},
+		{
+			name: "two digit",
+			inp:  "12",
+			out:  "دوازده",
+		},
+		{
+			name: "two digit",
+			inp:  "13",
+			out:  "سیزده",
+		},
+		{
+			name: "two digit",
+			inp:  "14",
+			out:  "چهارده",
+		},
+		{
+			name: "two digit",
+			inp:  "15",
+			out:  "پانزده",
+		},
+		{
+			name: "two digit",
+			inp:  "16",
+			out:  "شانزده",
+		},
+		{
+			name: "two digit",
+			inp:  "17",
+			out:  "هفده",
+		},
+		{
+			name: "two digit",
+			inp:  "18",
+			out:  "هجده",
+		},
+		{
+			name: "two digit",
+			inp:  "19",
+			out:  "نوزده",
 		},
 	}
 
