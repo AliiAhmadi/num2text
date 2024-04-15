@@ -11,7 +11,7 @@ import (
 )
 
 func TestCleanStr(t *testing.T) {
-	tests := []struct {
+	tests := [...]struct {
 		name string
 		inp  string
 		exp  string
@@ -34,7 +34,7 @@ func TestCleanStr(t *testing.T) {
 }
 
 func TestCleanNumberFunction(t *testing.T) {
-	tests := []struct {
+	tests := [...]struct {
 		name string
 		dec  bool
 		inp  string

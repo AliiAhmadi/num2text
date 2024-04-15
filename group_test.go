@@ -12,7 +12,7 @@ import (
 )
 
 func TestGroupFunction(t *testing.T) {
-	tests := []struct {
+	tests := [...]struct {
 		name string
 		inp  string
 		res  []string

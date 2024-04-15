@@ -12,7 +12,7 @@ import (
 
 // TestExistInArray
 func TestExistInArray(t *testing.T) {
-	tests := []struct {
+	tests := [...]struct {
 		name     string
 		value    interface{}
 		values   []interface{}
@@ -68,7 +68,7 @@ func TestExistInArray(t *testing.T) {
 
 // TestNumberValidator
 func TestNumberValidator(t *testing.T) {
-	tests := []struct {
+	tests := [...]struct {
 		name     string
 		num      string
 		expected bool
