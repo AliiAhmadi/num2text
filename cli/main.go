@@ -18,7 +18,7 @@ var (
 )
 
 func flags() {
-	flag.StringVar(&INP, "-num", "0", "number you want to convert")
+	flag.StringVar(&INP, "number", "0", "number you want to convert")
 	flag.Parse()
 }
 
