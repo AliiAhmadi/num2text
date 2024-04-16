@@ -11,6 +11,10 @@ import (
 	"strings"
 )
 
+func conversionError(num string) (string, error) {
+	return "", fmt.Errorf("error in conversion %v", num)
+}
+
 func Convert(num string) (string, error) {
 	num = strings.TrimSpace(num)
 
@@ -21,12 +25,12 @@ func Convert(num string) (string, error) {
 	)
 
 	if err != nil {
-		return "", fmt.Errorf("error in conversion %v", num)
+		return conversionError(num)
 	}
 
 	ok, err := numberValidator(num)
 	if err != nil {
-		return "", fmt.Errorf("error in conversion %v", num)
+		return conversionError(num)
 	}
 
 	if !ok {
@@ -63,12 +67,12 @@ func Convert(num string) (string, error) {
 
 	tmpDec, err := strconv.Atoi(dec)
 	if err != nil {
-		return "", fmt.Errorf("error in conversion %v", num)
+		return conversionError(num)
 	}
 
 	tmpIng, err := strconv.Atoi(ing)
 	if err != nil {
-		return "", fmt.Errorf("error in conversion %v", num)
+		return conversionError(num)
 	}
 
 	if tmpDec+tmpIng == 0 {

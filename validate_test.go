@@ -110,6 +110,12 @@ func TestNumberValidator(t *testing.T) {
 			expected: false,
 			err:      `number can not have more that one '-' or '.'`,
 		},
+		{
+			name:     "- in another index",
+			num:      "0234-",
+			expected: false,
+			err:      `'-' character should be in 0 index`,
+		},
 	}
 
 	for _, test := range tests {

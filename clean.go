@@ -34,3 +34,5 @@ func cleanNum(num string, dec bool) string {
 
 	return num
 }
+
+//
