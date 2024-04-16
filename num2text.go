@@ -30,7 +30,7 @@ func Convert(num string) (string, error) {
 
 	ok, err := numberValidator(num)
 	if err != nil {
-		return conversionError(num)
+		return conversionError(err.Error())
 	}
 
 	if !ok {
@@ -48,7 +48,7 @@ func Convert(num string) (string, error) {
 	}
 
 	var dec string
-	if len(grp) > 1 {
+	if len(grp) > 1 && grp[1] != "" {
 		dec = grp[1]
 	} else {
 		dec = "0"
@@ -122,21 +122,28 @@ func Convert(num string) (string, error) {
 
 		res += groupt
 
+		// TODO - bug from below
 		if !jump {
 			res += " " + coll.thousands[gcount]
 			if gcount != 0 {
-				tmpgs := ig[:i]
+				tmpgs := make([]string, i)
+				copy(tmpgs, ig)
+				mp := makeMap(tmpgs)
+
 				for j, g := range tmpgs {
 					ff, err := strconv.Atoi(g)
 					if err != nil || ff == 0 {
-						tmpgs = append(tmpgs[:j], tmpgs[j+1:]...)
+						// tmpgs = append(tmpgs[:j], tmpgs[j+1:]...)
+						delete(mp, j)
 					}
 				}
-				if len(tmpgs) != 1 {
+
+				if len(mp) != 1 {
 					res += coll.v
 				}
 			}
 		}
+		// end of bug section
 	}
 
 	if dec != "0" {
@@ -210,4 +217,14 @@ func Convert(num string) (string, error) {
 	}
 
 	return cleanStr(res), nil
+}
+
+func makeMap(s []string) map[int]string {
+	mp := map[int]string{}
+
+	for i, v := range s {
+		mp[i] = v
+	}
+
+	return mp
 }

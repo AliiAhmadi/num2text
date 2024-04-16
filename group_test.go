@@ -47,6 +47,11 @@ func TestGroupFunction(t *testing.T) {
 			inp:  "0234567895",
 			res:  []string{"0", "234", "567", "895"},
 		},
+		{
+			name: "group 7",
+			inp:  "3000000000",
+			res:  []string{"3", "000", "000", "000"},
+		},
 	}
 
 	for i, test := range tests {

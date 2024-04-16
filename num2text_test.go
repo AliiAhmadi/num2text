@@ -188,6 +188,26 @@ func TestNum2TextFunction(t *testing.T) {
 		// 	inp:  "3000000000",
 		// 	out:  "سه میلیارد",
 		// },
+		{
+			name: "",
+			inp:  "00003",
+			out:  "سه",
+		},
+		{
+			name: "",
+			inp:  "3000000001",
+			out:  "سه میلیارد و یک",
+		},
+		{
+			name: "",
+			inp:  ".10000000",
+			out:  "یک دهم",
+		},
+		{
+			name: "",
+			inp:  "-0.0001",
+			out:  "منفی یک دههزارم",
+		},
 	}
 
 	for i, test := range tests {
